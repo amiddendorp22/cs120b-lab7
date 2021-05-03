@@ -33,6 +33,9 @@ int main(void) {
 	PORTB = myVal >> 0x02; //grabs the upper eight bits from ADC
 	unsigned char lowerBits = myVal & 0x03; //grabs the lower two bits from ADC
 	PORTD = lowerBits;
+
+	//lowest value for potentiometer: 240 (integer)
+	//highest value for potentiometer: 897 (integer)
     }
     return 1;
 }
